@@ -9,9 +9,17 @@ public class Main {
         double miles = 10;
         double kilometers = convertMilesToKm(miles);
         System.out.println(miles + " miles is " + kilometers + " kilometers.");
+
+        double km = 16.0934;
+        double milesConverted = convertKmToMiles(km);
+        System.out.println(km + " kilometers is " + milesConverted + " miles.");
     }
 
     private static double convertMilesToKm(double miles) {
         return miles * MILES_TO_KM;
+    }
+
+    private static double convertKmToMiles(double kilometers) {
+        return kilometers / MILES_TO_KM;
     }
 }
